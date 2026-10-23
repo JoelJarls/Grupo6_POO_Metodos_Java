@@ -1,0 +1,21 @@
+ENUNCIADO
+Modifica el método de la potencia o crea un método verificarEdad que reciba una edad (int edad). Si la edad es menor a 0 o mayor a 120, debe imprimir "Edad inválida" y retornar false. Si es correcta, debe retornar true.
+
+Codigo Java
+public class ValidacionEdad {
+    public boolean verificarEdad(int edad) {
+      if (edad < 0 || edad > 120) {
+        System.out.println("Edad inválida");
+        return false;
+   }
+   return true;
+}
+
+public static void main(String[] args) {
+  ValidacionEdad validacion = new ValidacionEdad();
+  int edad = 19;
+  boolean esValida = validacion.verificarEdad(edad);
+  System.out.println("Edad válida: " + esValida);
+  }
+}
+  
